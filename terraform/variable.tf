@@ -34,6 +34,11 @@ variable "database_subnet_cidr_block" {
 }
 
 variable "sg_names" {
-    default = [ "catalogue", "user", "cart", "shipping", "payment" ]
+    default = [ "catalogue", "user", "cart", "shipping", "payment", "frontend-alb" ]
     type = list(string)
+}
+
+variable "catalogue_ingress_ports" {
+    default = [ 8080, 22 ]
+    type = list(number)
 }
