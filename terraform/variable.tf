@@ -42,3 +42,8 @@ variable "catalogue_ingress_ports" {
     default = [ 8080, 22 ]
     type = list(number)
 }
+
+variable "user_ingress_ports" {
+    default = [ 8080, 22 ]
+    type = list(number)
+}
