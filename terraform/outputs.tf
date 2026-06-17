@@ -1,5 +1,5 @@
 output "vpc_id" {
-    value = aws-vpc.roboshop_vpc.id
+    value = aws_vpc.roboshop_vpc.id
 }
 
 output "igw_id" {
@@ -19,7 +19,7 @@ output "database_subnet_id" {
 }
 
 output "nat_gateway_id" {
-    value = aws_nat_gateway.roboshop_nat.id
+    value = aws_nat_gateway.nat.id
 }
 
 output "sg_id" {
